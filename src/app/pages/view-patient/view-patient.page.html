@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>View Patient</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class = "flex">
+
+  <!-- input -->
+  <ion-item>
+   <ion-label class = "label">First Name:</ion-label>
+   <ion-label
+   class = "input-values"
+   >John</ion-label>
+ </ion-item>
+
+ <ion-item>
+   <ion-label class = "label">Last Name: </ion-label>
+   <ion-label
+   class = "input-values"
+   >Smith</ion-label>
+ </ion-item>
+
+ <ion-item>
+  <ion-label class = "label">D.O.B: </ion-label>
+  <ion-label
+  class = "input-values"
+    type="Date"
+    id="input-date"
+    [(ngModel)]="Date"
+  >03/11/2022</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Doctor Name: </ion-label>
+  <ion-label
+  class = "input-values"
+    id="input-doctor-name"
+    [(ngModel)]="doctor-name"
+  >Rodgers, Sam</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Department: </ion-label>
+  <ion-label
+  class = "input-values"
+  >Acute Care</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Contact Number: </ion-label>
+  <ion-label
+  class = "input-values"
+  >2896237575</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Address: </ion-label>
+  <ion-label
+  class = "input-values"
+  >541 Lovedale St,
+    Toronto, M2J1J4</ion-label>
+</ion-item>
+
+
+  
+ <!-- <ion-button routerLink="/home"  class = "btn-filled" expand="block">Add Patient</ion-button> -->
+
+</ion-content>

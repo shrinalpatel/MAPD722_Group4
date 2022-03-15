@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>View Patient Record</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class = "flex">
+
+  <!-- input -->
+  <ion-item>
+   <ion-label class = "label">Patient Name:</ion-label>
+   <ion-label
+   class = "input-values"
+   >Smith, John</ion-label>
+ </ion-item>
+
+ <ion-item>
+   <ion-label class = "label">Patient id: </ion-label>
+   <ion-label
+   class = "input-values"
+   >00001</ion-label>
+ </ion-item>
+
+ <ion-item>
+  <ion-label class = "label">Date: </ion-label>
+  <ion-label
+  class = "input-values"
+    type="Date"
+    id="input-date"
+    [(ngModel)]="Date"
+  >03/11/2022</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Nurse Name: </ion-label>
+  <ion-label
+  class = "input-values"
+    id="input-nurse-name"
+    [(ngModel)]="nurse-name"
+  >Maxwell, Sarah</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Type: </ion-label>
+  <ion-label
+  class = "input-values"
+  >Daily</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Blood Pressure: </ion-label>
+  <ion-label
+  class = "input-values"
+  >120</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Respiratory Rate: </ion-label>
+  <ion-label
+  class = "input-values"
+  >100</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Blood Oxygen Level: </ion-label>
+  <ion-label
+  class = "input-values"
+  >90</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class = "label">Heart Beat Rate : </ion-label>
+  <ion-label
+  class = "input-values"
+  >72</ion-label>
+</ion-item>
+  
+ <ion-button routerLink="/home"  class = "btn-filled" expand="block">Add Record</ion-button>
+
+</ion-content>
